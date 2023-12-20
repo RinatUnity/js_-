@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let age = Math.round(Math.random()*100);
+    console.log(age);
+    if(age>17 && age < 60){
+        console.log( "Вам еще работать и работать");
+    }else if(age>=1 && age <=17){
+        console.log("Вам еще рано работать");
+    }else{
+        console.log("Вам пора на пенсию");
+    }
+
+    let n = Math.round(Math.random()*1000);
+    if(n==1){
+        console.log(`на ветке сидело ${n} воронa`);
+    }else{
+        console.log(`на ветке сидело ${n} ворон`);
+    }
+
+    a = Math.round(Math.random()*100) - Math.round(Math.random()*100);
+    b = Math.round(Math.random()*100) - Math.round(Math.random()*100);
+    c = Math.round(Math.random()*100) - Math.round(Math.random()*100);
+    if(a > b && a > c){
+        console.log(`наибольшее число ${a}`)
+    }else if(a < b && b > c){
+        console.log(`наибольшее число ${b}`)
+    }if(c > b && a < c){
+        console.log(`наибольшее число ${c}`)
+    }
+
+    let apple = Math.round(Math.random()*10);
+    let citrus = Math.round(Math.random()*10);
+    console.log(`яблоки ${apple}`);
+    console.log(`аппельсины ${citrus}`);
+    apple = apple * 100;
+    citrus = citrus * 150;
+    if(apple > citrus){
+        console.log("Бери яблоки!");
+    }else{
+        console.log("Бери апельсины!");
+    }
+</script>
+</html>
